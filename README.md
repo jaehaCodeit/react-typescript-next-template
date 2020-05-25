@@ -6,7 +6,7 @@ This is boilerplate code of website and is based on React Library and Next frame
 You can easily start your own react project with this boilerplate code!
 
 <br>
-##guide
+## guide
 
 1. clone repository to your computer (https://github.com/pumpkin-raccoon/react-typescript-next-template.git)
 2. type `npm install` in your terminal (assume you have npm. If not, download nodejs first)
@@ -16,7 +16,7 @@ You can easily start your own react project with this boilerplate code!
 
 
 <br>
-##features 
+## features 
 
 - include many **useful libraries** such as babel, webpack, react, etc.
 - It is based on **typescript**, but javascript is also available.
@@ -40,12 +40,12 @@ You can easily start your own react project with this boilerplate code!
 - can easily control popup with Popup component and PopupStore
 
 <br>
-##examples
+## examples
 
 - custom index page
 
 <br>
-####(1) index page
+#### (1) index page
 
 You can change index page in `pages/home/index.tsx`.
 In mobile size, the sidebar(on the top right) change with animation.
@@ -55,11 +55,11 @@ In mobile size, the sidebar(on the top right) change with animation.
 <img src="https://react-typescript-next-template.s3.ap-northeast-2.amazonaws.com/main_mo_2.png" width="400" />
 
 <br>
-####(2) error page
+#### (2) error page
 
 (...ing)
 
 
 <br>
-##Author
+## Author
 Pumpkin.Raccoon (Jaeha Lee)
