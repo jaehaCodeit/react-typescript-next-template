@@ -1,7 +1,7 @@
 {
-  "name": "hsj",
-  "version": "1.0.0",
-  "description": "it is template project",
+  "name": "react-typescript-next-template",
+  "version": "0.0.1",
+  "description": "This is boilerplate code of website and is based on React Library and Next framework.",
   "main": "index.js",
   "scripts": {
     "dev": "next",
@@ -9,7 +9,7 @@
     "start": "cross-env NODE_ENV=production next start"
   },
   "keywords": [],
-  "author": "",
+  "author": "Pumpkin-Raccoon",
   "license": "ISC",
   "dependencies": {
     "@babel/plugin-proposal-class-properties": "^7.8.3",
