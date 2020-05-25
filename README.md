@@ -7,6 +7,15 @@ You can easily start your own react project with this boilerplate code!
 
 <br>
 
+## stack
+
+- React Library (Rendering)
+- Next Framework (Routing)
+- Typescript (Javascript available)
+- MobX (State control)
+
+<br>
+
 ## guide
 
 1. clone repository to your computer (https://github.com/pumpkin-raccoon/react-typescript-next-template.git)
@@ -21,7 +30,6 @@ You can easily start your own react project with this boilerplate code!
 ## features 
 
 - include many **useful libraries** such as babel, webpack, react, etc.
-- It is based on **typescript**, but javascript is also available.
 - **well structured directories** (pages, public, static, layouts, interface, api, components, stores)
 	- `pages` for the each page (_app, _document, _error page is default)
 	- `public` contains `static` folder (font, images, reference, styles folder included)
@@ -33,8 +41,7 @@ You can easily start your own react project with this boilerplate code!
 - make style with **scss**
 	- can change main color in `_var.scss`
 	- custom default css (such as using `rem` not `px`, 1rem = 10px)
-	- responsive! (write responsive code with typing `@import 'public/static/styles/utils.scss'` on the top of scss file)
-- control state with **mobX** 
+	- responsive! (write responsive code with typing `@import 'public/static/styles/utils.scss'` on the top of scss file) 
 - nprogress module (which shows loading bar on top in the case of CSR)
 - sidebar animation (in mobile size)
 - custom font (appleSDGothic, Jalnan, NanumSquare)
