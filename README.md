@@ -16,7 +16,8 @@ You can easily start your own react project with this boilerplate code!
 
 
 <br>
-##features
+##features 
+
 - include many **useful libraries** such as babel, webpack, react, etc.
 - It is based on **typescript**, but javascript is also available.
 - **well structured directories** (pages, public, static, layouts, interface, api, components, stores)
@@ -40,6 +41,7 @@ You can easily start your own react project with this boilerplate code!
 
 <br>
 ##examples
+
 - custom index page
 
 <br>
