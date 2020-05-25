@@ -7,13 +7,13 @@ const GeneralNav = () => {
 		<div className={`GeneralNav__menu`}>
 			<Link href={'/'} as={`/`} prefetch={false}>
 				<a className={'GeneralNav__menuEach'}>
-					메뉴1
+					Menu1
 				</a>
 			</Link>
 		
 			<Link href={`/`} as={`/`} prefetch={false}>
 				<a className={'GeneralNav__menuEach'}>
-					메뉴2
+					Menu2
 				</a>
 			</Link>
 		</div>

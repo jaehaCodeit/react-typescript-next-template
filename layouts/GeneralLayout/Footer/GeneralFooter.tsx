@@ -56,16 +56,16 @@ const GeneralFooter = (props: IGeneralFooterProps) => {
       <div className="GeneralFooter__content">
         <div className="GeneralFooter__content--text">
           <FooterTextEach head={META_FOOTER.TITLE} body={showBtwBar(true, true)} />
-          <FooterTextEach head={"주소"} body={`${META_FOOTER.ADDRESS}`} />
+          <FooterTextEach head={"Address"} body={`${META_FOOTER.ADDRESS}`} />
           <p>
             <span className="GeneralFooter__content__terms" onClick={onUseClick}>
-              사용자 이용 약관&nbsp;|&nbsp;
+              Use of Terms&nbsp;|&nbsp;
             </span>
             <span className="GeneralFooter__content__terms" onClick={onPrivacyClick}>
-              개인정보 취급방침&nbsp;|&nbsp;
+              Privacy Policy&nbsp;|&nbsp;
             </span>
             <Link href={'/'} as={'/'}>
-              <span className="GeneralFooter__content__terms">자주 묻는 질문</span>
+              <span className="GeneralFooter__content__terms">FAQ</span> 
             </Link>
           </p>
         </div>

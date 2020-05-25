@@ -15,17 +15,17 @@ const SideMenu = (props: IGeneralSideMenuProps) => {
       <div className={`SideMenu__background`} onClick={isOpen ? () => toggleSideNav() : () => { }} />
       <div className={`SideMenu__container`}>
         <div className="SideMenu__head">
-          <p>사이드 메뉴 상단입니다.</p>
+          <p>Part of SideMenu</p>
         </div>
         <div className="SideMenu__menuWrapper">
           <Link href={"/"} as={"/"} prefetch={false}>
             <a onClick={() => toggleSideNav()} className={"SideMenu__menuEach"}>
-              메뉴1
+              Menu1
             </a>
           </Link>
           <Link href={"/"} as={"/"} prefetch={false}>
             <a onClick={() => toggleSideNav()} className={"SideMenu__menuEach"}>
-              메뉴2
+              Menu2
             </a>
           </Link>
         </div>
