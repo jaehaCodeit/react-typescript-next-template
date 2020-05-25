@@ -58,6 +58,8 @@ In mobile size, the sidebar(on the top right) change with animation.
 
 <img src="https://react-typescript-next-template.s3.ap-northeast-2.amazonaws.com/main_mo_2.png" width="400" />
 
+<img src="https://react-typescript-next-template.s3.ap-northeast-2.amazonaws.com/main_pc_1.png" width="600" />
+
 <br>
 
 #### (2) error page
