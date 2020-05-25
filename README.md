@@ -42,11 +42,13 @@ You can easily start your own react project with this boilerplate code!
 - can easily control popup with Popup component and PopupStore
 
 <br>
+
 ## examples
 
 - custom index page
 
 <br>
+
 #### (1) index page
 
 You can change index page in `pages/home/index.tsx`.
@@ -57,11 +59,13 @@ In mobile size, the sidebar(on the top right) change with animation.
 <img src="https://react-typescript-next-template.s3.ap-northeast-2.amazonaws.com/main_mo_2.png" width="400" />
 
 <br>
+
 #### (2) error page
 
 (...ing)
 
 
 <br>
+
 ## Author
 Pumpkin.Raccoon (Jaeha Lee)
