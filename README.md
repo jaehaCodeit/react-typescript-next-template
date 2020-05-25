@@ -6,6 +6,7 @@ This is boilerplate code of website and is based on React Library and Next frame
 You can easily start your own react project with this boilerplate code!
 
 <br>
+
 ## guide
 
 1. clone repository to your computer (https://github.com/pumpkin-raccoon/react-typescript-next-template.git)
@@ -16,6 +17,7 @@ You can easily start your own react project with this boilerplate code!
 
 
 <br>
+
 ## features 
 
 - include many **useful libraries** such as babel, webpack, react, etc.
