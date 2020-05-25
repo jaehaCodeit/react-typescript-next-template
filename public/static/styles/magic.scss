@@ -1,0 +1,52 @@
+@import 'public/static/styles/utils.scss';
+
+//New Codtit's Responsive
+.CR {
+  //hidden
+  &__hidden {
+    display: none !important;
+
+    &--S {
+      //mobile
+      @media (max-width: 47.9375em) {
+        display: none !important;
+      }
+
+      &M {
+        @media(max-width: 61.9375em) {
+          display: none !important;
+        }
+      }
+
+      &L {
+        @media (min-width: 48em) and (max-width: 61.9375em) {
+          display: none !important;
+        }
+      }
+
+      &ML {
+        display: none !important;
+      }
+    }
+
+    &--M {
+      //Tablet
+      @media (min-width: 48em) and (max-width: 61.9375em) {
+        display: none !important;
+      }
+
+      &L {
+        @media (min-width: 48em) {
+          display: none !important;
+        }
+      }
+    }
+
+    &--L {
+      //Desktop
+      @media(min-width: 62em) {
+        display: none !important;
+      }
+    }
+  }
+}

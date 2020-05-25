@@ -1,0 +1,13 @@
+@import 'public/static/styles/utils.scss';
+
+.General {
+  position: relative;
+  @include p4n;
+
+  &__content {
+    display: block;
+    min-height: 83vh;
+    overflow: hidden;
+    position: relative;
+  }
+}

@@ -1,0 +1,94 @@
+@mixin font-case($color, $align, $size, $weight: normal) {
+	color: $color;
+	text-align: $align;
+	font-size: $size;
+	font-weight: $weight;
+}
+
+@mixin bg-ispr($image_url, $size: cover, $position: center, $repeat: no-repeat) {
+	background-image: url($image_url);
+	-webkit-background-size: $size;
+	background-size: $size;
+	background-position: $position;
+	background-repeat: $repeat;
+}
+
+@mixin absolute_align($top: 50%, $left: 50%) {
+	position: absolute;
+	-webkit-transform: translate(-50%, -50%);
+	transform: translate(-50%, -50%);
+	top: $top;
+	left: $left;
+}
+
+@mixin inner_height($ratio: 100, $calc: 0) {
+	height: calc((1vh * #{$ratio}) + #{$calc});
+	height: calc((var(--invh, 1vh) * #{$ratio}) + #{$calc});
+}
+
+@mixin min_inner_height($ratio: 100, $calc: 0) {
+	min-height: calc((1vh * #{$ratio}) + #{$calc});
+	min-height: calc((var(--invh, 1vh) * #{$ratio}) + #{$calc});
+}
+
+// padding for navbar
+@mixin p4n {
+	padding-top: 5.5rem;
+
+	@include response(M) {
+		padding-top: 6.5rem;
+	}
+}
+
+
+@mixin response($point) {
+
+	// 320px
+	@if $point==XS {
+		@media (max-width: 20em) {
+			@content;
+		}
+	}
+
+	// 768px
+	@else if $point==M {
+		@media (min-width: 48em) {
+			@content;
+		}
+	}
+
+	// 992px
+	@else if $point==L {
+		@media (min-width: 62em) {
+			@content;
+		}
+	}
+
+	// 1200px
+	@else if $point==XL {
+		@media (min-width: 75em) {
+			@content;
+		}
+	}
+
+	// 1400px
+	@else if $point==XXL {
+		@media (min-width: 87.5em) {
+			@content;
+		}
+	}
+}
+
+$z-layers: ('sidebar-cover': 10,
+	'sidebar': 15,
+  'dropdown': 5,
+  'popup': 100,
+);
+
+@function z($layer) {
+	@if not map-has-key($z-layers, $layer) {
+		@warn "No layer found for `#{$layer}` in $z-layers map. Property omitted.";
+	}
+
+	@return map-get($z-layers, $layer);
+}

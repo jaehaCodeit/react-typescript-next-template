@@ -1,0 +1,21 @@
+@import 'public/static/styles/utils.scss';
+
+.GeneralNav {
+	&__menu {
+		float: right;
+		line-height: 6.5rem;
+		height: 6.5rem;
+	}
+
+	&__menuEach {
+		display: inline-block;
+		cursor: pointer;
+		vertical-align: middle;
+		margin-right: 4.4rem;
+		@include font-case(#333236, center, 1.5rem, 600);
+
+		@include response(L) {
+			margin-right: 6.2rem;
+		}
+	}
+}

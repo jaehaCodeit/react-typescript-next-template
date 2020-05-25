@@ -1,0 +1,164 @@
+@import 'public/static/styles/utils.scss';
+
+.GeneralFooter {
+  width: 100%;
+  background: transparent;
+  border-top: solid 0.1rem rgba(151, 151, 151, 0.3);
+
+  @include response(M) {
+    height: 10rem;
+  }
+
+  @include response(L) {
+    height: 9.8rem;
+  }
+
+  &__content {
+    display: flex;
+    justify-content: stretch;
+    flex-wrap: wrap-reverse;
+    align-items: stretch;
+    height: 100%;
+    max-width: 116.8rem;
+    padding-left: 3.7rem;
+    padding-right: 3rem;
+    margin-right: auto;
+    margin-left: auto;
+
+    @include response(M) {
+      justify-content: space-between;
+      align-content: center;
+      align-items: center;
+      flex-wrap: nowrap;
+    }
+
+    &--text {
+      display: flex;
+      flex-wrap: wrap;
+      justify-content: center;
+      align-content: flex-start;
+      max-width: 53rem;
+      margin: 2rem auto 3.2rem;
+      p {
+        width: 100%;
+        text-align: center;
+      }
+
+      @include response(M) {
+        justify-content: unset;
+        align-content: space-around;
+        height: 100%;
+        margin: 0;
+        padding-top: 2.3rem;
+        padding-bottom: 2.3rem;
+        p {
+          width: 100%;
+          text-align: left;
+          margin: 0;
+        }
+      }
+
+      @include response(L) {
+        padding-top: 1.8rem;
+        padding-bottom: 1.8rem;
+      }
+    }
+
+    &--textEach {
+      line-height: 1.8;
+      margin-bottom: .7rem;
+      font-size: 1.1rem;
+      color: #a9abb7;
+
+      @include response(M) {
+        margin-bottom: 0;
+        font-size: 1.2rem;
+      }
+    }
+
+    &--textHead {
+      font-weight: bold;
+      margin-right: .6rem;
+    }
+
+    &--textBody {
+      margin-right: .6rem;
+    }
+
+    &--icons {
+      display: flex;
+      justify-content: space-between;
+      margin-top: 2.5rem;
+      margin-bottom: 2.5rem;
+      margin-right: auto;
+      margin-left: auto;
+
+      @include response(M) {
+        margin: 0;
+      }
+    }
+
+    &--iconEach {
+      position: relative;
+      width: 2.7rem;
+      height: 2.7rem;
+      opacity: 0.83;
+      background-color: #a9abb7;
+      border-radius: 100%;
+      transition: .4s;
+      margin-left: .325rem;
+      margin-right: .325rem;
+      cursor: pointer;
+      @include response(M) {
+        width: 3.6rem;
+        height: 3.6rem;
+        margin-left: .35rem;
+        margin-right: .35rem;
+      }
+
+      &:hover {
+        background-color: $color--main;
+      }
+    }
+
+    &--iconImg {
+      position: absolute;
+      left: 50%;
+      top: 50%;
+      -webkit-transform: translate(-50%, -50%);
+      transform: translate(-50%, -50%);
+      width: 1.6rem;
+      @include response(M) {
+        width: 2rem;
+      }
+    }
+
+    &__terms {
+      cursor: pointer;
+      line-height: 1.8;
+      font-size: 1.2rem;
+      font-weight: bold;
+      letter-spacing: -.03rem;
+      color: #a9abb7;
+    }
+  }
+}
+
+.isTransparent.GeneralFooter {
+  .GeneralFooter {
+    &__content {
+      &--textEach {
+        color: #d9dbe3;
+      }
+      &__terms {
+        color: #d9dbe3;
+      }
+      &--iconEach {
+        background-color: #d9dbe3;
+        &:hover {
+          background-color: #7c00ff;
+        }
+      } 
+    }
+  }
+}

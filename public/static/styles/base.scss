@@ -1,0 +1,138 @@
+@import './animation';
+@import './utils.scss';
+@import url('https://fonts.googleapis.com/css?family=IBM+Plex+Mono:500&display=swap');
+
+@font-face {
+	font-family: 'Jalnan';
+	src: url(/public/font/Jalnan.eot);
+	src: url(/public/font/Jalnan.eot?#iefix) format('embedded-opentype'),
+		url(/public/font/Jalnan.svg#Jalnan) format('svg'),
+		url(/public/font/Jalnan.ttf) format('truetype'),
+		url(/public/font/Jalnan.woff) format('woff'),
+		url(/public/font/Jalnan.woff2) format('woff2');
+	font-weight: normal;
+	font-style: normal;
+}
+
+@font-face {
+	font-family: 'AppleSDGothicNeo--Regular';
+	src: url(/public/font/AppleSDGothicNeo-Regular.eot);
+	src: url(/public/font/AppleSDGothicNeo-Regular.eot?#iefix) format('embedded-opentype'),
+		url(/public/font/AppleSDGothicNeo-Regular.svg#AppleSDGothicNeo-Regular) format('svg'),
+		url(/public/font/AppleSDGothicNeo-Regular.ttf) format('truetype'),
+		url(/public/font/AppleSDGothicNeo-Regular.woff) format('woff'),
+		url(/public/font/AppleSDGothicNeo-Regular.woff2) format('woff2');
+	font-weight: normal;
+	font-style: normal;
+}
+
+@font-face {
+	font-family: "NanumSquareLight";
+	src: url(/public/font/NanumSquareL.eot);
+	src: url(/public/font/NanumSquareL.eot?#iefix) format('embedded-opentype'),
+		url(/public/font/NanumSquareL.woff) format('woff'),
+		url(/public/font/NanumSquareL.ttf) format('truetype');
+}
+
+@font-face {
+	font-family: "NanumSquare";
+	src: url(/public/font/NanumSquareR.eot);
+	src: url(/public/font/NanumSquareR.eot?#iefix) format('embedded-opentype'),
+		url(/public/font/NanumSquareR.woff2) format('woff2'),
+		url(/public/font/NanumSquareR.woff) format('woff'),
+		url(/public/font/NanumSquareR.ttf) format('truetype');
+}
+
+@font-face {
+	font-family: "NanumSquareBold";
+	src: url(/public/font/NanumSquareB.eot);
+	src: url(/public/font/NanumSquareB.eot?#iefix) format('embedded-opentype'),
+		url(/public/font/NanumSquareB.woff2) format('woff2'),
+		url(/public/font//NanumSquareB.woff) format('woff'),
+		url(/public/font/NanumSquareB.ttf) format('truetype');
+}
+
+@font-face {
+	font-family: "NanumSquareEB";
+	src: url(/public/font/NanumSquareEB.eot);
+	src: url(/public/font/NanumSquareEB.eot?#iefix) format('embedded-opentype'),
+		url(/public/font/NanumSquareEB.woff2) format('woff2'),
+		url(/public/font//NanumSquareEB.woff) format('woff'),
+		url(/public/font/NanumSquareEB.ttf) format('truetype');
+}
+
+@font-face {
+	font-family: "NanumSquareCoding";
+	src: url(/public/font/NanumGothicCoding.ttf);
+	src: url(/public/font/NanumGothicCoding.ttf) format('truetype');
+}
+
+*,
+*::before,
+*::after {
+	margin: 0;
+	padding: 0;
+	box-sizing: inherit;
+	background-color: transparent;
+}
+
+html {
+	font-size: 62.5%;
+	box-sizing: border-box;
+	scroll-behavior: smooth;
+	-webkit-overflow-scrolling: touch;
+}
+
+body {
+	min-width: 32rem;
+	font-size: 1.6rem;
+	font-family: AppleSDGothicNeo-Regular, 'AppleSDGothicNeo--Regular', 'Noto Sans KR', sans-serif;
+	letter-spacing: -.03rem;
+	background-color: #f9fbfc;
+}
+
+button {
+	cursor: pointer;
+	font-family: AppleSDGothicNeo-Regular, 'AppleSDGothicNeo--Regular', 'Noto Sans KR', sans-serif;
+	letter-spacing: -.03rem;
+	outline: none;
+}
+
+a {
+	text-decoration: none;
+	color: inherit;
+}
+
+img {
+	vertical-align: middle;
+}
+
+li {
+	list-style: none;
+}
+
+input:focus {
+	outline: none;
+	box-shadow: 0 0 0 .1rem $color--main;
+}
+
+#nprogress {
+	.bar {
+		background: $color--main;
+		height: .4rem;
+		box-shadow: none;
+	}
+
+	.peg {
+		box-shadow: none;
+	}
+
+	.spinner-icon {
+		border-top-color: $color--main;
+		border-left-color: $color--main;
+	}
+}
+
+code {
+	font-family: 'IBM Plex Mono', 'Noto Sans KR', monospace, sans-serif
+}

@@ -1,0 +1,205 @@
+@import 'public/static/styles/utils.scss';
+
+
+@keyframes burgerMoveOne {
+  70% {
+    top: 2.1rem;
+    right: 3rem;
+    width: 1.3rem;
+    height: 1.3rem;
+    border-radius: 100%;
+  }
+
+  100% {
+    top: 2.6rem;
+    right: 2.6rem;
+    width: 2rem;
+    background-color: #ffffff;
+    -webkit-transform: rotate(45deg);
+    transform: rotate(45deg);
+  }
+}
+
+@keyframes burgerBackOne {
+  0% {
+    top: 2.6rem;
+    right: 2.6rem;
+    width: 2rem;
+    background-color: #ffffff;
+    -webkit-transform: rotate(45deg);
+    transform: rotate(45deg);
+  }
+
+  70% {
+    top: 2.1rem;
+    right: 3rem;
+    width: 1.3rem;
+    height: 1.3rem;
+    border-radius: 100%;
+  }
+
+  100% {
+    top: 2.1rem;
+    right: 3.1rem;
+    width: 1.8rem;
+  }
+}
+
+@keyframes burgerMoveTwo {
+  70% {
+    top: 2.1rem;
+    right: 3rem;
+    width: 1.3rem;
+    height: 1.3rem;
+    border-radius: 100%;
+  }
+
+  100% {
+    top: 2.7rem;
+    right: 3.5rem;
+    width: 0px;
+    height: 0px;
+  }
+}
+
+@keyframes burgerBackTwo {
+  0% {
+    top: 2.7rem;
+    right: 3.5rem;
+    width: 0px;
+    height: 0px;
+  }
+
+  70% {
+    top: 2.1rem;
+    right: 3rem;
+    width: 1.3rem;
+    height: 1.3rem;
+    border-radius: 100%;
+  }
+
+  100% {
+    top: 2.8rem;
+    right: 2.9rem;
+    width: 1.4rem;
+  }
+}
+
+@keyframes burgerMoveThree {
+  0% {
+    top: 3.5rem;
+    right: 3.6rem;
+    width: 1.3rem;
+  }
+
+  70% {
+    top: 2.1rem;
+    right: 3rem;
+    width: 1.3rem;
+    height: 1.3rem;
+    border-radius: 100%;
+  }
+
+  100% {
+    top: 2.6rem;
+    right: 2.65rem;
+    width: 1.9rem;
+    background-color: #ffffff;
+    -webkit-transform: rotate(-45deg);
+    transform: rotate(-45deg);
+  }
+}
+
+@keyframes burgerBackThree {
+  0% {
+    top: 2.6rem;
+    right: 2.65rem;
+    width: 1.9rem;
+    background-color: #ffffff;
+    -webkit-transform: rotate(-45deg);
+    transform: rotate(-45deg);
+  }
+
+  70% {
+    top: 2.1rem;
+    right: 3rem;
+    width: 1.3rem;
+    height: 1.3rem;
+    border-radius: 100%;
+  }
+
+  100% {
+    top: 3.5rem;
+    right: 3.6rem;
+    width: 1.3rem;
+  }
+}
+
+.GeneralSideNav {
+  &--burgerMenuIcon {
+    float: right;
+    position: relative;
+    width: 5.5rem;
+    height: 5.5rem;
+    cursor: pointer;
+    z-index: 15;
+  }
+
+  &__burgerLine {
+    position: absolute;
+    height: .2rem;
+    border-radius: .1rem;
+    background-color: $color--main;
+    transition: animation 4s;
+    transition-duration: .5s;
+
+    &.isOpened {
+      background-color: #ffffff;
+    }
+
+    &--1 {
+      position: absolute;
+      top: 2.1rem;
+      right: 3.1rem;
+      width: 1.8rem;
+
+      &.isOpened {
+        animation: burgerMoveOne .4s 0s normal forwards;
+      }
+
+      &.isClosed {
+        animation: burgerBackOne .4s 0s normal forwards;
+      }
+    }
+
+    &--2 {
+      position: absolute;
+      top: 2.8rem;
+      right: 2.9rem;
+      width: 1.4rem;
+
+      &.isOpened {
+        animation: burgerMoveTwo .4s 0s normal forwards;
+      }
+
+      &.isClosed {
+        animation: burgerBackTwo .4s 0s normal forwards;
+      }
+    }
+
+    &--3 {
+      position: absolute;
+      top: 3.5rem;
+      right: 3.6rem;
+      width: 1.3rem;
+
+      &.isOpened {
+        animation: burgerMoveThree .4s 0s normal forwards;
+      }
+
+      &.isClosed {
+        animation: burgerBackThree .4s 0s normal forwards;
+      }
+    }
+  }
+}

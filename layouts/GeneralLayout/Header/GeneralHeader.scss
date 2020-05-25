@@ -1,0 +1,122 @@
+@import 'public/static/styles/utils.scss';
+
+.GeneralHeader {
+  position: fixed;
+  top: 0;
+  left: 0;
+  z-index: 6;
+  width: 100%;
+  height: 5.5rem;
+  background-color: #f9fbfcf2;
+  z-index: 90;
+
+  @include response(M) {
+    height: 6.5rem;
+  }
+
+  &--transparent {
+    background-color: transparent;
+    box-shadow: none;
+
+    .GeneralNav__menu {
+      visibility: hidden;
+
+      @include response(M) {
+        visibility: hidden;
+      }
+
+      @include response(L) {
+        visibility: visible;
+      }
+    }
+  }
+
+  &.defaultWhite {
+    .GeneralNav {
+      &__menuEach {
+        color: #ffffff;
+
+        &--UIContainer::after {
+          background-color: #ffffff;
+        }
+      }
+    }
+  }
+
+  &.defaultWhiteMobile {
+    .GeneralSideNav__burgerLine {
+      background-color: #ffffff;
+    }
+  }
+
+  &.scroll {
+    box-shadow: 0 0 .3rem 0 rgba(41, 27, 55, 0.21);
+    background-color: rgba(249, 251, 252, 0.95);
+
+    .GeneralNav {
+      &__menuEach {
+        color: #333236;
+
+        &--UIContainer::after {
+          background-color: #44454a;
+        }
+      }
+
+      &__menu {
+        @include response(M) {
+          visibility: visible;
+        }
+      }
+    }
+
+    .GeneralSideNav__burgerLine {
+      background-color: $color--main;
+    }
+  }
+
+  &__wrapper {
+    position: relative;
+    width: 100%;
+    max-width: 134rem;
+    margin: auto;
+  }
+
+  &__logo {
+    height: 5.5rem;
+    display: inline-block;
+    padding: 1.6rem 0 1.8rem 2.8rem;
+    vertical-align: middle;
+    cursor: pointer;
+    @include response(M) {
+      height: 6.5rem;
+      padding: 2.04rem 3rem 2.1rem 4.8rem;
+    }
+    @include response(L) {
+      padding: 2.04rem 3rem 2.1rem 4.5rem;
+    }
+
+    &>img {
+      width: 7.4rem;
+      height: 2.1rem;
+      @include response(M) {
+        width: 8.4rem;
+        height: 2.4rem;
+      }
+    }
+  }
+
+  .SideMenu,
+  .GeneralSideNav--burgerMenuIcon {
+    @include response(M) {
+      display: none;
+    }
+  }
+
+  .GeneralNav__menu {
+    display: none;
+
+    @include response(M) {
+      display: inherit;
+    }
+  }
+}
